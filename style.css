@@ -1,0 +1,11 @@
+#google-header-nav{
+    display:flex;
+    flex-direction: row;
+}
+#google-header-nav-ul {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding:5px;
+}

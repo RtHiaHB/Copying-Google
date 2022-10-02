@@ -1,6 +1,4 @@
-* {
-    border:1px solid maroon;
-}
+/*get the nav bar aligned on the top and looking correct*/
 
 #google-header-nav1{
     display:flex;
@@ -24,6 +22,15 @@
     text-decoration: none;
     color:rgb(100,100,100);
 }
+
+/*adds space to the center of the top nav bar.  */
+/*If you look below, I did it differently, but I'm running out of time to fix it. :(*/
+.add-center-space {
+    margin-right:80%;
+}
+
+
+/*centers the search bar on the page, and does that fancy oval-shape thing the kids are raving about*/
 .search-input-container {
     background-color: #fff;
     width:100%;
@@ -41,10 +48,9 @@
     border-radius:15px;
     z-index: 999;
 }
-.add-center-space {
-    margin-right:80%;
-}
 
+
+/*I'm pretty sure Google did this via an inline SVG, but I don't have the time*/
 #mag-glass{
     margin-left:15px;
 }
@@ -53,18 +59,6 @@
     display:flex;
     justify-content: center;
     margin-bottom:20px;   
-}
-
-#footer-div-1 {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #fff;
-    width: 100%;
-    position:absolute;
-    bottom:0;
-    height:40px;
-    margin-top:40px;
 }
 
 #input-box {
@@ -81,11 +75,25 @@
 .search-button {
     margin:5px;
     border-radius:3px;
-    background-color: rgb(250, 250, 250);
+    border:none;
+    background-color: rgb(245, 245, 245);
     color:#444444;
     height:40px;
 }
-
+/*this sets up the links on the bottom of the page*/
+#footer-div-1 {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    position:absolute;
+    bottom:0;
+    height:40px;
+    margin-top:40px;
+}
+/*If I had time to refactor this, I would make a class to cover each individual footer element,*/
+/*And the Ids for left, right, center*/
 .footer-div-left {
     display:flex;
     flex-direction: row;
